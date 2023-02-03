@@ -39,7 +39,7 @@ with open("lib/manifest_form.json", "r", encoding="utf-8") as file:
 os.makedirs("pack/scripts")
 shutil.copyfile("lib/pack_icon.png", "pack/pack_icon.png")
 with open("pack/scripts/main.js", "w") as script_file:
-    script_file.write('import {world} from "mojang-minecraft"\n')
+    script_file.write('import {\n\tworld\n} from "@minecraft/server";\n')
 with open("pack/manifest.json", "w", encoding="utf-8") as manifest_file:
     json.dump(manifest, manifest_file, indent="\t", ensure_ascii=False)
 
