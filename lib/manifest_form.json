@@ -18,7 +18,7 @@
 			"type": "script",
 			"language": "javascript",
 			"entry": "scripts/main.js",
-			"version": "1.0.0-beta",
+			"version": "1.0.0-beta"
 		}
 	],
 	"dependencies": [
